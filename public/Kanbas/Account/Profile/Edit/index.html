@@ -1,0 +1,66 @@
+<html>
+
+<body>
+    <h1>Daniel Seong</h1>
+    <form>
+        <label for="edit-profile-username">Name:</label>
+        <input id="edit-profile-username" value="Daniel Seong" />
+        <label for="select-pronouns">Pronouns:</label>
+        <select id="select-pronouns">
+            <option selected value="None">None</option>
+        </select>
+        <br>
+        <label for="profile-title">Title:</label>
+        <input type="text" id="profile-title" /><br />
+        <h3>Contact</h3>
+        No registered services, you can add some on the <a href="#">settings </a>page.
+        <h3>Contact</h3>
+        No registered services, you can add some on the <a href="#">settings </a>page.
+        <h3>Biography</h3>
+        <form id="biography">
+            <label for="biography">Hi my name is Daniel Seong.</label> <br>
+            <textarea cols="30" rows="10">Hi my name is Daniel Seong.</textarea>
+        </form>
+        <h3>Links</h3>
+        <ul>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="add-title"><b>Title</b></label> <br />
+                        <input id="add-title" />
+                    </td>
+                    <td>
+                        <label for="add-url"><b>URL</b></label> <br />
+                        <input id="add-url" />
+                    </td>
+                    <td><a href="#">Remove</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button">Add another link</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="location.href='#'">Cancel</button>
+                        <button type="button" onclick="location.href='/Kanbas/Account/Profile/screen.html'">Save
+                            Profile</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="location.href='/Kanbas/Account/Profile/Edit/screen.html'">Edit
+                            Profile</button>
+                        <button type="button" onclick="location.href='/Kanbas/Account/Profile/screen.html'">
+                            Cancel Editing</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

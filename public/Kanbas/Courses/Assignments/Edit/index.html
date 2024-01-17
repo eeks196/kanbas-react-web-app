@@ -1,4 +1,7 @@
-<select id="edit-edit-assignment">
+<html>
+
+<body>
+  <select id="edit-edit-assignment">
     <option value="Speed Grader">Speed Grader</option>
     <option value="Duplicate">Duplicate</option>
     <option value="Delete">Delete</option>
@@ -6,60 +9,59 @@
     <option value="Send To...">Send To...</option>
     <option value="Copy To...">Copy To...</option>
     <option value="Share To Commons">Share To Commons</option>
-</select>
-<hr>
-<h3>Assignment Name</h3>
-<form id="create-assignment">
-    <input type="text" id="name-assignment" placeholder="Assignment Name"/> <br/>
-    <textarea cols="20" rows="5" placeholder="This is the assignment description.">This is the assignment description.</textarea><br>
+  </select>
+  <hr>
+  <h3>Assignment Name</h3>
+  <form id="create-assignment">
+    <input type="text" id="name-assignment" placeholder="Assignment Name" /> <br />
+    <textarea cols="20" rows="5"
+      placeholder="This is the assignment description.">This is the assignment description.</textarea><br>
     <label for="assignment-points">Points:<br></label>
-    <input id="assignment-points" placeholder="100"/><br/>
+    <input id="assignment-points" placeholder="100" /><br />
     <label for="assignment-group">Assignment Group<br></label>
     <select id="assignment-group">
-        <option value="ASSIGNMENTS">ASSIGNMENTS</option>
-        <option value="QUIZZES">QUIZZES</option>
-        <option value="EXAMS">EXAMS</option>
-        <option value="PROJECT">PROJECT</option>
+      <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+      <option value="QUIZZES">QUIZZES</option>
+      <option value="EXAMS">EXAMS</option>
+      <option value="PROJECT">PROJECT</option>
     </select>
     <br>
     <label for="assignment-grade-display">Display Grade as<br></label>
     <select id="assignment-grade-display">
-        <option value="Percentage">Percentage</option>
-        <option value="Decimal">Decimal</option>
-        <option value="Raw Score">Raw Score</option>
+      <option value="Percentage">Percentage</option>
+      <option value="Decimal">Decimal</option>
+      <option value="Raw Score">Raw Score</option>
     </select>
     <br>
     <label for="assignment-submission">Submission Type<br></label>
     <select id="assignment-submission">
-        <option value="Online">Online</option>
-        <option value="In Person">In Person</option>
+      <option value="Online">Online</option>
+      <option value="In Person">In Person</option>
     </select>
     <br>
     <label for="assignment-online-sumbission-type">Online Entry Options<br></label>
-    <input type="checkbox" value="Text Entry"
-      name="check-online-options" id="text-entry-option"/>
-    <label for="text-entry-option">Text Entry</label> <br/>
-    <input type="checkbox" value="Website URL"
-      name="check-online-options" id="text-web-url"/>
-    <label for="text-web-url">Website URL</label> <br/>
-    <input type="checkbox" value="Media Recording"
-      name="check-Media" id="text-Media"/>
-    <label for="text-Media">Media Recordings</label> <br/>
-    <input type="checkbox" value="Student Annotation"
-      name="check-annotations" id="text-annotation"/>
-    <label for="text-annotation">Student Annotiation</label> <br/>
-    <input type="checkbox" value="File Uploads"
-      name="check-files" id="text-file"/>
-    <label for="text-file">File Uploads</label> <br/>
+    <input type="checkbox" value="Text Entry" name="check-online-options" id="text-entry-option" />
+    <label for="text-entry-option">Text Entry</label> <br />
+    <input type="checkbox" value="Website URL" name="check-online-options" id="text-web-url" />
+    <label for="text-web-url">Website URL</label> <br />
+    <input type="checkbox" value="Media Recording" name="check-Media" id="text-Media" />
+    <label for="text-Media">Media Recordings</label> <br />
+    <input type="checkbox" value="Student Annotation" name="check-annotations" id="text-annotation" />
+    <label for="text-annotation">Student Annotiation</label> <br />
+    <input type="checkbox" value="File Uploads" name="check-files" id="text-file" />
+    <label for="text-file">File Uploads</label> <br />
     Assign<br>
     <label for="assignment-to">Assign to<br></label>
-    <input id="assignment-to" placeholder="Everyone"/><br/>
+    <input id="assignment-to" placeholder="Everyone" /><br />
     <label for="assignment-due">Due<br></label>
-    <input type="date" id="assignment-due" value="2021-01-01"/><br/>
+    <input type="date" id="assignment-due" value="2021-01-01" /><br />
     <label for="assignment-avail">Available from<br></label>
-    <input type="date" id="assignment-avail" value="2021-01-01"/><br/>
+    <input type="date" id="assignment-avail" value="2021-01-01" /><br />
     <label for="assignment-until">Until<br></label>
-    <input type="date" id="assignment-until" value="2021-01-01"/><br/>
+    <input type="date" id="assignment-until" value="2021-01-01" /><br />
     <button onclick="location.href='/Kanbas/Courses/Assignments/screen.html'" type="button">cancel</button>
     <button onclick="location.href='/Kanbas/Courses/Assignments/screen.html'" type="button">save</button>
-</form>
+  </form>
+</body>
+
+</html>
