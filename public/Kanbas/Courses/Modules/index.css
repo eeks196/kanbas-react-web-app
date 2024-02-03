@@ -50,3 +50,11 @@
   border-color: #b5b3b3;
   color: white;
 }
+.section-menu-text {
+  font-size: x-small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #b5b3b3;
+  padding-bottom: 10px;
+}

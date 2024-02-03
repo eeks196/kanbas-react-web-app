@@ -33,7 +33,6 @@
 }
 
 .neu-img {
-  vertical-align: middle;
   display: block;
   max-width: 100%;
   margin: 0; /* Reset margin */
@@ -42,4 +41,27 @@
 
 .card-title {
   color: navy;
+}
+.list-group-item.mini-nav {
+  color: red;
+  border: none;
+  background-color: white;
+}
+
+.mini-nav .menu-link { 
+  text-decoration: none;
+  color: red;
+}
+
+.list-group-item.mini-nav .menu-link:hover{ 
+  color: red;
+}
+
+.close-link {
+  color: #a2a7ae;
+  text-decoration: none;
+}
+
+.close-link:hover {
+  color: #a2a7ae;
 }
