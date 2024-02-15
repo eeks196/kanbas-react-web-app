@@ -7,6 +7,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Modules from "./Modules";
 import CourseNavigation from "./Navigation";
+import Assignments from "./Assignments";
+import "./index.css"
 function Courses() {
   const { courseID } = useParams();
   const course = courses.find((course) => course._id === courseID);
@@ -25,7 +27,7 @@ function Courses() {
               <HiMiniBars3 className="kanbas-red" />
           </li>
           <li className="breadcrumb-item kanbas-red">
-            <Link className = "kanbas-red" to={`${courseID}`}>
+            <Link className = "kanbas-red" to={`./Home`}>
               {course?.name}
             </Link>
           </li>
@@ -45,7 +47,7 @@ function Courses() {
             <Route path="Home" element={<Home/>} />
             <Route path="Modules" element={<Modules/>} />
             <Route path="Piazza" element={<h1>Piazza</h1>} />
-            <Route path="Assignments" element={<h1>Assignments</h1>} />
+            <Route path="Assignments" element={<Assignments/>} />
             <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>

@@ -1,0 +1,11 @@
+.breadcrumb-item::after {
+    content: '>'; /* Set custom divider character */
+    padding: 0 0.5rem; /* Add padding around the divider character */
+    color: #ccc; /* Set color of the divider character */
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: none;
+  }
+  .breadcrumb-item:nth-child(1)::after {
+    display: none;
+  }
