@@ -2,14 +2,26 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { useParams, useLocation } from "react-router-dom";
-import { courses } from "..//Database";
+import db from "..//Database";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Modules from "./Modules";
 import CourseNavigation from "./Navigation";
 import Assignments from "./Assignments";
 import "./index.css"
-function Courses() {
+interface Course {
+  _id: string;
+  name: string;
+  number: string;
+  startDate: string;
+  endDate: string;
+  image: string;
+}
+
+interface Props {
+  courses: Course[];
+}
+function Courses({courses} : Props) {
   const { courseID } = useParams();
   const course = courses.find((course) => course._id === courseID);
   const { pathname } = useLocation();
